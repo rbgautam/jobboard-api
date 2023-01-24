@@ -1,0 +1,28 @@
+{
+  "name": "jobboard-api",
+  "version": "1.0.0",
+  "description": "This ia a job board",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbgautam/jobboard-api.git"
+  },
+  "keywords": [
+    "jobs",
+    "career",
+    "node.js",
+    "REST",
+    "api",
+    "express",
+    "mongodb"
+  ],
+  "author": "Rahul B. Gautam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rbgautam/jobboard-api/issues"
+  },
+  "homepage": "https://github.com/rbgautam/jobboard-api#readme"
+}
