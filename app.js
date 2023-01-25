@@ -1,6 +1,11 @@
 const express = require('express');
-const PORT = 8080;
+
 const app = express();
+const dotenv = require('dotenv');
+
+dotenv.config({path:'./config/config.env'});
+
+const PORT = process.env.PORT;
 
 app.get('/',(req,res)=>{
     // res.status(200);
@@ -10,5 +15,5 @@ app.get('/',(req,res)=>{
 
 
 app.listen(PORT,()=>{
-    console.log('Job Board api started');
-});
+    console.log(`Job Board api started on port ${PORT} in ${process.env.NODE_ENV}`);
+})

@@ -4,7 +4,9 @@
   "description": "This ia a job board",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app",
+    "prod": "SET NODE_ENV=production & nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,12 @@
   "bugs": {
     "url": "https://github.com/rbgautam/jobboard-api/issues"
   },
-  "homepage": "https://github.com/rbgautam/jobboard-api#readme"
+  "homepage": "https://github.com/rbgautam/jobboard-api#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
